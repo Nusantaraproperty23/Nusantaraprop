@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ProductItem from "./ProductItem";
+import ProductItem from "./components/ProductItem";
 import axios from "axios";
 
 function App() {
