@@ -116,7 +116,7 @@ function App() {
   useEffect(() => {
     signIn()
     loadProduct()
-  }, )
+  }, [])
 
   console.log(userData, "userData")
   return (
