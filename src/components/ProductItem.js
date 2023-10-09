@@ -1,5 +1,5 @@
 import { Button, Modal } from "antd"
-import React, { useState } from "react"
+import React { useState } from "react"
 
 const ProductItem = ({ onOrder, item }) => {
   return (
