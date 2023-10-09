@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import ProductItem from "./components/ProductItem";
-import axios from "axios";
+import { useEffect, useState } from "react"
+import ProductItem from "./components/ProductItem"
+import axios from "axios"
 
 function App() {
   const [userData, setUserData] = useState(null)
@@ -14,7 +14,7 @@ function App() {
 
   const createLog = (body) => {
     axios
-      .post("https://tesnet.propertynusantara.com/api/log/create", body)
+      .post("https://propertynusantara.stagging.my.id/api/log/create", body)
       .then((res) => {
         console.log("ok")
       })
@@ -33,7 +33,7 @@ function App() {
 
   const loadProduct = () => {
     axios
-      .get("https://tesnet.propertynusantara.com/api/product/list")
+      .get("https://propertynusantara.stagging.my.id/api/product/list")
       .then((res) => {
         setProducts(res?.data?.data || [])
       })
@@ -72,7 +72,7 @@ function App() {
       body: JSON.stringify({ paymentId }),
     })
     axios.post(
-      "https://tesnet.propertynusantara.com/api/payments/approve",
+      "https://propertynusantara.stagging.my.id/api/payments/approve",
       { paymentId },
       config
     )
@@ -86,7 +86,7 @@ function App() {
     })
     // axiosClient.post('/payments/complete', {paymentId, txid}, config);
     axios.post(
-      "https://tesnet.propertynusantara.com/api/payments/complete",
+      "https://propertynusantara.stagging.my.id/api/payments/complete",
       { paymentId, txid },
       config
     )
