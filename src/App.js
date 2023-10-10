@@ -122,11 +122,7 @@ function App() {
   return (
     <div className="max-w-lg mx-auto border-x">
       <div className=" bg-white p-4">
-        <img
-          src="https://i.ibb.co/ZcB9pKt/logo.jpg"
-          alt=""
-          className="w-14 h-14 rounded-full mx-auto"
-        />
+       
       </div>
       {userData && <p>{JSON.stringify(userData)}</p>}
       <div class="grid grid-cols-2 gap-4 mt-8 p-4">
