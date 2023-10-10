@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React { useEffect, useState } from "react"
 import ProductItem from "./components/ProductItem"
 import axios from "axios"
 
