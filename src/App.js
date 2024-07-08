@@ -156,7 +156,7 @@ function App() {
   }, [])
 
   return (
-    <div className="max-w-lg mx-auto border-x h-screen">
+    <div className="max-w-lg mx-auto border-x h-w">
       <div className=" bg-white p-4">
         <div className="flex items-center font-bold text-lg">
           <img
