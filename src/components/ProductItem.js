@@ -4,8 +4,17 @@ import React, { useEffect, useState } from "react"
 
 const ProductItem = ({ onOrder, item, user }) => {
   return (
-    <div class=" border rounded-lg">
-      <img
+
+     <div className="container mt-5">
+      <Link to="/add" className="button is-success">
+        Add New
+      </Link>
+      <div className="columns is-multiline mt-2">
+        {products.map((product) => (
+          <div className="column is-one-quarter" key={product.id}>
+            <div className="card">
+              <div className="card-image">
+                <figure className="image is-4by3"> <img
         src={
           item.product_image_url ||
           "https://www.southernliving.com/thmb/_Msu9OCpvE-OUTRvfYxCIJyPbhE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/27196_AdaptiveCottage00006-2000-7702094217044ce4830a8adb0a69b6da.jpg"
@@ -13,6 +22,24 @@ const ProductItem = ({ onOrder, item, user }) => {
         alt=""
         className="h-30 w-full object-cover rounded-lg "
       />
+                </figure>
+              </div>
+              <div className="card-content">
+                <div className="media">
+                  <div className="media-content">
+                    <p className="title is-4">{product.name}</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+    
+    <div class=" border rounded-lg">
+     
       <div className=" p-4">
         <p className="font-bold mt-2">{item.product_name}</p>
         <ModalDetail onOrder={onOrder} item={item} user={user} />
