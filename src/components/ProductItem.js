@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react"
 
 const ProductItem = ({ onOrder, item, user }) => {
   return (
-    <div class=" border rounded-lg">
+    <div class=" border rounded-lg"><div class="mt-8">
       <img
         src={
           item.product_image_url ||
