@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import ProductItem from "./components/ProductItem"
 import axios from "axios"
-  import App from "App.css"
+  import App from "/App.css"
 import { Empty, Input, Spin } from "antd"
 import { SearchOutlined } from "@ant-design/icons"
 
