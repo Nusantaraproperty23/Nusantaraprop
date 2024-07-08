@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 import ProductItem from "./components/ProductItem"
 import axios from "axios"
-
 import { Empty, Input, Spin } from "antd"
 import { SearchOutlined } from "@ant-design/icons"
 
@@ -152,12 +151,12 @@ function App() {
   }
 
   useEffect(() => {
-    signIn()
+    //signIn()
     loadProduct()
   }, [])
 
   return (
-    <div className="max-w-lg mx-auto border-x h-w">
+    <div className="max-w-lg mx-auto border-x h-screen">
       <div className=" bg-white p-4">
         <div className="flex items-center font-bold text-lg">
           <img
